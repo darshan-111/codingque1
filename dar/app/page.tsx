@@ -3,7 +3,7 @@ import { getGithubRepo } from '../lib/getGithubRepo';
 
 export default function HomePage() {
   const repo = use(getGithubRepo('vercel/next.js'));
-
+//this comp will show the repo details such as repo name and desciption
   return (
     <main style={{ fontFamily: 'sans-serif', padding: 20 }}>
       <h1>{repo.full_name}</h1>
