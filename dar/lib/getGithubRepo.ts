@@ -1,3 +1,4 @@
+// this async func will fetch the repo data from the github api
 export async function getGithubRepo(repo: string) {
   const res = await fetch(`https://api.github.com/repos/${repo}`, {
     headers: {
